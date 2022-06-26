@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppSizes {
-  static const double defaultMargin = 26;
+  static const double defaultMargin = 24;
   static double phoneWidth(context) {
     return MediaQuery.of(context).size.width;
   }
@@ -19,4 +19,4 @@ TextTheme textTheme(context) {
   return Theme.of(context).textTheme;
 }
 
-const String databaseApplication = 'moneytoring.db';
+const String databaseApplication = 'furnitour.db';
