@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeSearch extends StatelessWidget {
-  const HomeSearch({
+class SearchBox extends StatelessWidget {
+  const SearchBox({
     Key? key,
   }) : super(key: key);
 

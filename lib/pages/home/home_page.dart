@@ -4,12 +4,11 @@ import 'package:furnitour/config/theme.dart';
 import 'package:furnitour/models/category.dart';
 import 'package:furnitour/models/product.dart';
 import 'package:furnitour/pages/home/widgets/discount_banner.dart';
-import 'package:furnitour/pages/home/widgets/home_header.dart';
 import 'package:furnitour/pages/home/widgets/new_arrival.dart';
-import 'package:furnitour/pages/home/widgets/search_category.dart';
-
-import 'widgets/home_search.dart';
-import 'widgets/product_card_category.dart';
+import '../../widgets/header_page.dart';
+import '../../widgets/search_category.dart';
+import '../../widgets/search_box.dart';
+import '../../widgets/product_card_category.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,18 +22,44 @@ class HomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: AppSizes.defaultMargin, vertical: 12),
-                child: Column(
-                  children: const [
-                    HomeHeader(),
-                    SizedBox(
-                      height: 24,
-                    ),
-                    HomeSearch(),
-                  ],
+              HeaderPage(
+                Container(
+                  width: 48,
+                  height: 48,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  alignment: Alignment.center,
+                  child: Image.asset(
+                    'assets/icons/drawer-icon.png',
+                    width: 24,
+                    height: 24,
+                  ),
                 ),
+                Text(
+                  'Furnitour',
+                  style: textTheme(context).headlineLarge,
+                ),
+                Container(
+                  width: 48,
+                  height: 48,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  alignment: Alignment.center,
+                  child: Image.asset(
+                    'assets/icons/cart-icon.png',
+                    width: 24,
+                    height: 24,
+                  ),
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: AppSizes.defaultMargin, vertical: 12),
+                child: SearchBox(),
               ),
               const SizedBox(
                 height: 24,
@@ -165,7 +190,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 50,
+                height: 80,
               ),
             ],
           ),

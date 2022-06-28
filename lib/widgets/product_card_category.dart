@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import '../../../config/constant.dart';
-import '../../../config/theme.dart';
-import '../../../models/product.dart';
+import '../config/constant.dart';
+import '../config/theme.dart';
+import '../models/product.dart';
 
 class ProductCardByCategory extends StatelessWidget {
   final Product product;
