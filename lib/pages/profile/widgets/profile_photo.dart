@@ -13,7 +13,7 @@ class ProfilePhoto extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            padding: EdgeInsets.all(5),
+            padding: const EdgeInsets.all(5),
             width: 100,
             height: 100,
             decoration: BoxDecoration(
@@ -24,7 +24,7 @@ class ProfilePhoto extends StatelessWidget {
               ),
             ),
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   image: AssetImage(

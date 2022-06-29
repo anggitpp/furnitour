@@ -90,13 +90,13 @@ class ExplorePage extends StatelessWidget {
               ),
               ListView.builder(
                 shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: dummyChair.length,
                 itemBuilder: (context, index) => ProductCardByCategory(
                   product: dummyChair[index],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 80,
               ),
             ],

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:furnitour/config/theme.dart';
+import 'package:furnitour/config/route_name.dart';
 import 'package:furnitour/pages/profile/widgets/profile_photo.dart';
 import 'package:furnitour/widgets/header_page.dart';
 
@@ -37,40 +37,42 @@ class ProfilePage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              ProfilePhoto(),
-              SizedBox(
+              const ProfilePhoto(),
+              const SizedBox(
                 height: 15,
               ),
               Text(
                 'Shadam Bimo',
                 style: textTheme(context).labelLarge!.copyWith(fontSize: 18),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 2,
               ),
               Text(
                 'Bimo12@gmail.com',
                 style: textTheme(context).bodySmall!.copyWith(fontSize: 14),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 26,
               ),
-              ProfilePageMenuItem(
+              const ProfilePageMenuItem(
                 text: 'Active Order',
                 image: 'assets/icons/active-order-icon.png',
               ),
               ProfilePageMenuItem(
                 text: 'Payment Method',
                 image: 'assets/icons/payment-method-icon.png',
+                onTap: () =>
+                    Navigator.pushNamed(context, RouteName.paymentMethod),
               ),
-              ProfilePageMenuItem(
+              const ProfilePageMenuItem(
                 text: 'Account Settings',
                 image: 'assets/icons/settings-icon.png',
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Align(
@@ -85,18 +87,18 @@ class ProfilePage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 12,
               ),
-              ProfilePageMenuItem(
+              const ProfilePageMenuItem(
                 text: 'Customer Service',
                 image: 'assets/icons/customer-service-icon.png',
               ),
-              ProfilePageMenuItem(
+              const ProfilePageMenuItem(
                 text: 'Terms of Service',
                 image: 'assets/icons/tos-icon.png',
               ),
-              SizedBox(
+              const SizedBox(
                 height: 100,
               ),
             ],

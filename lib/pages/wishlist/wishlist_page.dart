@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:furnitour/models/product.dart';
 import 'package:furnitour/pages/wishlist/widgets/product_card_wishlist.dart';
 import 'package:furnitour/widgets/header_page.dart';
-import 'package:intl/intl.dart';
 
 import '../../config/constant.dart';
 
@@ -37,7 +36,7 @@ class WishlistPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
               Padding(
@@ -45,7 +44,7 @@ class WishlistPage extends StatelessWidget {
                     horizontal: AppSizes.defaultMargin),
                 child: ListView.builder(
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   itemCount: dummyChair.length,
                   itemBuilder: (context, index) {
                     return Padding(
