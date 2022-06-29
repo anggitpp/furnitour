@@ -41,7 +41,7 @@ class ExplorePage extends StatelessWidget {
             children: [
               HeaderPage(
                 Text(
-                  'Furnitour',
+                  'Explore Product',
                   style: textTheme(context).headlineLarge,
                 ),
                 const SizedBox(),
