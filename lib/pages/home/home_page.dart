@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furnitour/config/constant.dart';
+import 'package:furnitour/config/route_name.dart';
 import 'package:furnitour/config/theme.dart';
 import 'package:furnitour/models/category.dart';
 import 'package:furnitour/models/product.dart';
@@ -107,14 +108,18 @@ class HomePage extends StatelessWidget {
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: dummyChair.length,
-                  itemBuilder: (context, index) => Padding(
-                    padding: EdgeInsets.only(
-                        left: index == 0 ? AppSizes.defaultMargin : 12,
-                        right: index == dummyChair.length - 1
-                            ? AppSizes.defaultMargin
-                            : 0),
-                    child: NewArrival(
-                      product: dummyChair[index],
+                  itemBuilder: (context, index) => GestureDetector(
+                    onTap: () =>
+                        Navigator.pushNamed(context, RouteName.detailProduct),
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          left: index == 0 ? AppSizes.defaultMargin : 12,
+                          right: index == dummyChair.length - 1
+                              ? AppSizes.defaultMargin
+                              : 0),
+                      child: NewArrival(
+                        product: dummyChair[index],
+                      ),
                     ),
                   ),
                 ),
