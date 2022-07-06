@@ -9,6 +9,7 @@ Color pinkColor = '#FF6363'.toColor();
 Color lightGreyColor = '#F7F7F7'.toColor();
 Color softGreyColor = '#C4C4C4'.toColor();
 Color blackColor = '#1C1C27'.toColor();
+Color greyBorderColor = '#EEEEEE'.toColor();
 
 ThemeData lightTheme = ThemeData(
   textTheme: TextTheme(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:supercharged/supercharged.dart';
 
 import '../../../config/constant.dart';
 import '../../../config/theme.dart';
@@ -14,12 +13,12 @@ class ReviewBoxWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: AppSizes.phoneWidthMargin(context),
-      margin: EdgeInsets.only(bottom: 12),
-      padding: EdgeInsets.all(12),
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.all(12),
       height: 140,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: '#EEEEEE'.toColor(), width: 1),
+        border: Border.all(color: greyBorderColor, width: 1),
       ),
       child: Column(
         children: [
@@ -29,14 +28,14 @@ class ReviewBoxWidget extends StatelessWidget {
               Container(
                 width: 16,
                 height: 16,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   image: DecorationImage(
                     image: AssetImage('assets/images/profile.png'),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 7,
               ),
               Text(
@@ -46,7 +45,7 @@ class ReviewBoxWidget extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     color: blackColor),
               ),
-              Spacer(),
+              const Spacer(),
               Text(
                 '1 Month ago',
                 style: textTheme(context)
@@ -55,11 +54,11 @@ class ReviewBoxWidget extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
-          StarWidget(5),
-          SizedBox(
+          const StarWidget(5),
+          const SizedBox(
             height: 4,
           ),
           Text(
@@ -68,7 +67,7 @@ class ReviewBoxWidget extends StatelessWidget {
                 .titleSmall!
                 .copyWith(fontSize: 10, color: greyColor),
           ),
-          SizedBox(
+          const SizedBox(
             height: 4,
           ),
           SizedBox(
@@ -80,7 +79,7 @@ class ReviewBoxWidget extends StatelessWidget {
                 return Container(
                   width: 36,
                   height: 36,
-                  margin: EdgeInsets.only(right: 6),
+                  margin: const EdgeInsets.only(right: 6),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6),
                     image: const DecorationImage(

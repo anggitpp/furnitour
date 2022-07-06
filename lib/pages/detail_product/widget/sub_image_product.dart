@@ -13,7 +13,7 @@ class SubImageProduct extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: orangeColor, width: 2),
-        image: DecorationImage(
+        image: const DecorationImage(
           image: AssetImage(
             'assets/images/sofa/hemlingby-chair.png',
           ),

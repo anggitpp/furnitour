@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:furnitour/config/theme.dart';
-import 'package:furnitour/pages/detail_product/widget/sub_image_product.dart';
 import 'package:furnitour/widgets/header_page.dart';
 import 'package:intl/intl.dart';
-import 'package:supercharged/supercharged.dart';
 
 import '../../config/constant.dart';
 import 'widget/detail_product_item.dart';
@@ -108,7 +106,7 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                         .labelLarge!
                                         .copyWith(fontSize: 18),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 2,
                                   ),
                                   Text(
@@ -131,7 +129,7 @@ class _DetailProductPageState extends State<DetailProductPage> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 24,
                           ),
                           Row(
@@ -171,12 +169,12 @@ class _DetailProductPageState extends State<DetailProductPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 24,
                     ),
                     Container(
                       width: AppSizes.phoneWidthMargin(context),
-                      padding: EdgeInsets.all(AppSizes.defaultMargin),
+                      padding: const EdgeInsets.all(AppSizes.defaultMargin),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(12),
@@ -200,7 +198,7 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                     fontSize: 13,
                                     color: blackColor,
                                     fontWeight: FontWeight.w500),
-                            tabs: [
+                            tabs: const [
                               Tab(
                                 text: "Details Product",
                               ),
@@ -209,7 +207,7 @@ class _DetailProductPageState extends State<DetailProductPage> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 24,
                           ),
                           //TODO :: MAKE THIS TABBAR EXPANDABLE
@@ -225,14 +223,14 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                       'Description',
                                       style: textTheme(context).labelMedium,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 6,
                                     ),
                                     RichText(
                                       text: TextSpan(
                                         style: textTheme(context).bodySmall,
                                         children: [
-                                          TextSpan(
+                                          const TextSpan(
                                               text:
                                                   'Luxury is our guide. We use an elastic foam filling for comfort, thick grain leather in the contact area because it looks. '),
                                           TextSpan(
@@ -247,39 +245,39 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                         ],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 24,
                                     ),
                                     Text(
                                       'Measurements',
                                       style: textTheme(context).labelMedium,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 12,
                                     ),
-                                    DetailProductItem(
+                                    const DetailProductItem(
                                         title: 'Wide', value: '204 cm'),
-                                    DetailProductItem(
+                                    const DetailProductItem(
                                         title: 'Depth', value: '89 cm'),
-                                    DetailProductItem(
+                                    const DetailProductItem(
                                         title: 'Tall', value: '78 cm'),
-                                    DetailProductItem(
+                                    const DetailProductItem(
                                         title: 'Armrest Height',
                                         value: '64 cm'),
-                                    DetailProductItem(
+                                    const DetailProductItem(
                                         title: 'Seat Width', value: '180 cm'),
-                                    DetailProductItem(
+                                    const DetailProductItem(
                                         title: 'Seath Depth', value: '61 cm'),
-                                    DetailProductItem(
+                                    const DetailProductItem(
                                         title: 'Seat Height', value: '44 cm'),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 24,
                                     ),
                                     Text(
                                       'Familiar Product',
                                       style: textTheme(context).labelMedium,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 12,
                                     ),
                                     SizedBox(
@@ -291,7 +289,8 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                           return Container(
                                             width: 54,
                                             height: 54,
-                                            margin: EdgeInsets.only(right: 9),
+                                            margin:
+                                                const EdgeInsets.only(right: 9),
                                             decoration: BoxDecoration(
                                               borderRadius:
                                                   BorderRadius.circular(12),
@@ -327,7 +326,7 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 12,
                                     ),
                                     Row(
@@ -359,7 +358,7 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                               CrossAxisAlignment.end,
                                           children: [
                                             Row(
-                                              children: [
+                                              children: const [
                                                 StarWidget(5),
                                                 SizedBox(
                                                   width: 12,
@@ -367,11 +366,11 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                                 ReviewsBar(30),
                                               ],
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 5,
                                             ),
                                             Row(
-                                              children: [
+                                              children: const [
                                                 StarWidget(4),
                                                 SizedBox(
                                                   width: 12,
@@ -379,11 +378,11 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                                 ReviewsBar(20),
                                               ],
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 5,
                                             ),
                                             Row(
-                                              children: [
+                                              children: const [
                                                 StarWidget(3),
                                                 SizedBox(
                                                   width: 12,
@@ -391,11 +390,11 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                                 ReviewsBar(80),
                                               ],
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 5,
                                             ),
                                             Row(
-                                              children: [
+                                              children: const [
                                                 StarWidget(2),
                                                 SizedBox(
                                                   width: 12,
@@ -403,11 +402,11 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                                 ReviewsBar(50),
                                               ],
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 5,
                                             ),
                                             Row(
-                                              children: [
+                                              children: const [
                                                 StarWidget(1),
                                                 SizedBox(
                                                   width: 12,
@@ -419,11 +418,11 @@ class _DetailProductPageState extends State<DetailProductPage> {
                                         )
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 24,
                                     ),
-                                    ReviewBoxWidget(),
-                                    ReviewBoxWidget(),
+                                    const ReviewBoxWidget(),
+                                    const ReviewBoxWidget(),
                                     //TODO :: MAKE REVIEW WIDGET EXPANDABLE
                                   ],
                                 ),
@@ -433,7 +432,7 @@ class _DetailProductPageState extends State<DetailProductPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 150,
                     )
                   ],
@@ -442,10 +441,10 @@ class _DetailProductPageState extends State<DetailProductPage> {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
-                  padding: EdgeInsets.all(AppSizes.defaultMargin),
+                  padding: const EdgeInsets.all(AppSizes.defaultMargin),
                   width: AppSizes.phoneWidth(context),
                   height: 100,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
                   child: Row(
