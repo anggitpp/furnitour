@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import '../../../config/constant.dart';
-import '../../../config/theme.dart';
+import '../config/constant.dart';
+import '../config/theme.dart';
 
 class BottomCheckoutWidget extends StatelessWidget {
+  final bool isCheckout;
   const BottomCheckoutWidget({
+    this.isCheckout = true,
     Key? key,
   }) : super(key: key);
 
@@ -95,7 +97,7 @@ class BottomCheckoutWidget extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    'Checkout',
+                    isCheckout ? 'Pay Now' : 'Checkout',
                     style: textTheme(context).labelLarge!.copyWith(
                           color: Colors.white,
                         ),

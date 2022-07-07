@@ -5,7 +5,7 @@ import 'package:intl/intl.dart';
 import 'package:simple_shadow/simple_shadow.dart';
 
 import '../../config/constant.dart';
-import 'widget/bottom_checkout_widget.dart';
+import '../../widgets/bottom_checkout_widget.dart';
 import 'widget/checkout_payment_method_widget.dart';
 import 'widget/product_cart_list.dart';
 
